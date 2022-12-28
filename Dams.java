@@ -9,7 +9,7 @@ public class Dams {
 	
 	public static void main(String[] args) {
 		Collection <String> karnataka=new ArrayList<String>();
-		karnataka.add(" ksr");
+		karnataka.add("mom");
 		karnataka.add(" tungabhadra");
 		karnataka.add(" bhadra ");
 		karnataka.add(" linganamakki");
@@ -88,7 +88,7 @@ public class Dams {
 		maharastra.add("isapur dam ");
 		maharastra.add(" totladoh ");
 		maharastra.add("warna dam ");
-		maharastra.add("bhatsa  ");
+		maharastra.add("mom  ");
 		System.out.println( "total no of dams in maharastra" +  maharastra.size());
 		
 		Collection <String> odisha=new ArrayList<String>();
@@ -180,19 +180,22 @@ public class Dams {
 		 }
 		 System.out.println("after remove method"+ inIndia);
 
-		
-//		int rem;
-//		int rev=0;
-//		int temp;
-//		temp=rev;
-//		Iterator<String> p=inIndia.iterator();
-//		while(p.hasNext()) {
-//			String re=p.next();
-//			String pali=re.isPalidrome();
-//			
-//		}
-//		
-		
+				for(String rev:inIndia) {
+					
+//					System.out.println(rev);
+					StringBuilder ma=new StringBuilder(rev);
+					ma.reverse();
+					String reverse=ma.toString();
+					
+					if(rev.equals(reverse)) {
+						System.out.println("string is palidrom"+rev);
+					}
+					else {
+						System.out.println(" string is not palindromre");
+					}
+					
+					
+				}
 		
 		
 		
