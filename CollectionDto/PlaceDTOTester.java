@@ -5,6 +5,7 @@ public class PlaceDTOTester {
 		PlacesDTO p=new PlacesDTO("hampi", "karnataka", "India");
 		PlacesDTO p1=new PlacesDTO("adoni", "andra pradesh", "India");
 		PlacesDTO p2=new PlacesDTO("chennai", "thamilnadu", "India");
+		
 		System.out.println(p.getPlacesName().contains(p2.getPlacesName()));
 		
 	}
