@@ -16,11 +16,14 @@ public class DataBaseDTORunner {
 		Collection <DatabaseVendorDTO> c=new LinkedList<DatabaseVendorDTO>();
 		c.add(d2);
 		c.add(d);
-		List<String> l=c.stream().map(n->n.getDevelopedBy().toUpperCase()).collect(Collectors.toList());
-		System.out.println(l);
-		List<DatabaseVendorDTO> l2=c.stream().filter(n->n.getCost()>100 && n.getType().equals("network")).collect(Collectors.toList());
-		System.out.println(l2);
-		
+		System.out.println(c);
+//		List<String> l=c.stream().map(n->n.getDevelopedBy().toUpperCase()).collect(Collectors.toList());
+//		System.out.println(l);
+//		List<DatabaseVendorDTO> l2=c.stream().filter(n->n.getCost()<100 && n.getType().equals("network")).collect(Collectors.toList());
+//		System.out.println(l2);
+		List<DatabaseVendorDTO> l3=c.stream().filter(n->c.contains(n.getType())).collect(Collectors.toList());
+		System.out.println(l3);
+		l3.forEach(n->System.out.println(n));
 	}
 
 }

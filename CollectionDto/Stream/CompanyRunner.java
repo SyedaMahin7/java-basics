@@ -16,7 +16,7 @@ public class CompanyRunner {
 		Collection <CompanyCEODTO> m= new ArrayList<CompanyCEODTO>();
 		m.add(c);
 		m.add(c2);
-		List<CompanyCEODTO> l=m.stream().filter(n->n.getDoughterDTO()).collect(Collectors.toList());
+		List<CompanyCEODTO> l=m.stream().filter(n->m.contains(n.getDoughterDTO())).collect(Collectors.toList());
 		System.out.println(l);
 		
 	}

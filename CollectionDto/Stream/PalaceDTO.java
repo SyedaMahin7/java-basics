@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class PalaceDTO {
+public class PalaceDTO implements Comparable<PalaceDTO>{
 	private String name;
 	private String location;
 	private String builtby;
@@ -44,11 +44,27 @@ public boolean equals(Object obj) {
 		return 30;
 		
 	}
-
+	
+//	@Override
+//	public int compareTo(PalaceDTO o) {
+//		// TODO Auto-generated method stub
+//		if(o.entryFees==entryFees) {
+//			return 0;
+//		}else if(o.entryFees>this.entryFees) {
+//			return 1;}
+//			if(o.entryFees>entryFees) {
+//				return -1;
+//			}
+//		else 
+//		return -1;
+//		//return entryFees.compareTo(o.entryFees);
+//	
+//	}
+	}
 	
 	
 	
 	
 	
 
-}
+

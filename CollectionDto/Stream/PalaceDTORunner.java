@@ -12,8 +12,9 @@ public static void main(String[] args) {
 	Collection<PalaceDTO> c=new ArrayList<PalaceDTO>();
 	c.add(p1);
 	c.add(p);
-	List<PalaceDTO> list=c.stream().filter(s ->s.isDestroyed()!=true).collect(Collectors.toList())
+	List<PalaceDTO> list=c.stream().filter(s ->!s.getName().contains("mysore")).collect(Collectors.toList())
 			;
+	list.forEach(n->System.out.println(n));
 	System.out.println(list);
 	
 }

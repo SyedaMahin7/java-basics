@@ -40,6 +40,19 @@ public class CompanyCEODTO {
 		return "CompanyCEODTO [name=" + name + ", company=" + company + ", age=" + age + ", country=" + country
 				+ ", qualification=" + qualification + ", married=" + married + ", doughterDTO=" + doughterDTO + "]";
 	}
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		if(obj!=null) {
+			if(obj instanceof CompanyCEODTO ) {
+				CompanyCEODTO eq=(CompanyCEODTO)obj;
+			if(eq.getName().equals(this.getName())) {
+				return true;
+			}
+			}
+		}
+		return false;
+	}
 	
 
 }
