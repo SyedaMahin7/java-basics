@@ -12,6 +12,7 @@ public class Runner {
 		s.setName("Syeda mahin");
 		s.setRank("first");
 		s.setBatallian("ghh");
+		s.setId(20);
 		ServiceImp i=new ServiceImp();
 		RepoImp r=new RepoImp();
 		i.validate(s);
