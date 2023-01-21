@@ -1,0 +1,91 @@
+1.Collection is a framework is have predefined classes and interface so we can modifie 
+,later we can reused the method can it reduce the programming effort.
+collection is inherited from the iterable ,and collection have 4 interfaces.
+1.list
+2.set
+3.treeset
+4.sorted setr
+difference beetween list and set is
+list                                                 set
+1.in list we can strore duplicate values          1. in set we can store only unique value only
+2.it is index based                               2. it is not index based
+3.it is fallow insertion order                    3.it is unorder
+3.it allow position access                        4.it not allow position access
+5.it have both iterator and list iterator         5.it is only have iterator only
+so we can access the element in both the 
+direction like forword direction and backword 
+direction
+
+2. implementation of the map are 1.linkedmap,2.treemap,3.hashmap
+
+3.difference beetween hasmap and treemap is where tree is follow accending order 
+and hash map is fallow insertion order.
+ 
+
+8. String Operation with Streem 
+strem have filter mathod,collector method ,for each method, and in filter we 
+can use isEmpty,contains,containsall methods.
+9.Spring Core is a openSourceFrameWork, which have inbuilt methods and so it 
+create object withod using the new keyword,with the help of the Configuration
+we can scan the Component Scan so  find the Component Annotation in the class and
+it create the object of the bean.
+
+10. the Dependency injection can be achive by IOC and where one cass have the referece
+of the another class.
+
+11. we can inject the bean by @Autowired.if we have similartype of the method then we can
+differencess them by add @Qulifiear Annotation.
+
+12.yes we can have more than one cofiguration file in the project.
+
+the spring get get to by giving the write annotation .
+13. String Buffer                                           String Builder
+    1. it is mutable                                        1. it is also a mutable
+     2. it is slow in forformance                            2. it is fast in forformance
+     3.beacouse it it is exicute the 
+method in one by one                               3. it execute the all the method in parlally.
+
+
+14.2. IOC  where it is depending on the dependencies injection where it have the reference the
+onother class.
+    4.@Componet is where store the metadata so we can transwer to the congiuration 
+    5.@ComponetScan it find the where the Componet Annotation is present with the help of paccake
+we can find the componnet
+    6.@Bean is used to create the abject and register te object
+16. public class Country{
+public static void main(String m[]){
+Map<String,Interger> map=new TreeMap<String,Interger>();
+map.put("india",235);
+map.put("china",45);
+map.put("america",48);
+map.put("srilanka",36);
+map.put("pakistan",52);
+map.forEach((m)->System.out.println(n+" "+m);
+map.forEach((n)->if(n.contains("china"){System.out.println(n)};
+map.remove("china",45);
+}
+}
+
+17. 1.Maven is the open sorce framework which is used to downlod the jars and dependeicies
+   which is used in the spring 
+   3. TomCat is the sofware where it is used  to share the data from one computer to 
+onother computer with help of server.
+    4.Quarkus is a dependencie jar which help to validate the our data without doing mannually.
+    
+18.public class Country{
+public static void main(String m[]){
+List<String> list=new LinkedList<String>();
+list.add("mahin");
+list.add("Syeda");
+list.add("summu");
+list.add("mehatb");
+list.remove("mahin");
+list.remove("mehatab");
+list.forEach(n->System.out.println(n));
+}
+}
+
+}
+}	
+
+                      
